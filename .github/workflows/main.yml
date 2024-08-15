@@ -1,0 +1,12 @@
+name: Print Message
+
+on:
+  workflow_dispatch:  # Allows you to manually trigger the workflow from the GitHub UI
+
+jobs:
+  print:
+    runs-on: windows-latest  # Changed the runner to Windows
+
+    steps:
+      - name: Print a message
+        run: echo "Hello, this is a GitHub Actions workflow!"
